@@ -1,27 +1,851 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DG Lytix</title>
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
+<html lang="zxx">
 
-<div class="container">
-   <div class="box">
-    <div class="animation">
-     <div class="one spin-one"></div>
-     <div class="two spin-two"></div>
-     <div class="three spin-one"></div>
+  <meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  />
+
+  <head>
+    <title>DG Lytix</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#5F16EBff" />
+    <link rel="stylesheet" href="assets/css/mystyle.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="home front-page">
+    <div id="firstCircle" class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div id="spinloader" class="load">
+        <hr /><hr /><hr /><hr />
     </div>
-  <h1>Site Under maintenance</h1>
-  <p>Sorry for any inconcenience caused</p>
 
-  </div>
-</div>
+    <div
+        class="pr__mobile__nav"
+        id="navbar-mobile"
+        data-uk-offcanvas="overlay: true; flip: true; mode: none"
+    >
+        <div class="uk-offcanvas-bar">
+            <button
+                class="uk-offcanvas-close"
+                type="button"
+                data-uk-close="ratio: 2;"
+            ></button>
 
-</body>
+            <nav
+                class="menu"
+                data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true"
+            >
+                <ul
+                    data-uk-scrollspy="target: > li; cls:uk-animation-slide-right; delay: 100; repeat: true;"
+                >
+                    <li><a href="#pr__hero">Home</a></li>
+                    <li><a href="#pr__services">Services</a></li>
+                    <li><a href="#pr__works">Portfolio
+                    </a></li>
+                    <li><a href="#pr__about">About</a></li>
+                    <li><a href="#pr__clients">Team</a></li>
+                    <li><a href="#pr__blog">Articles</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="pr__wrapper" id="site-wrapper">
+        <div class="pr__hero__wrap" id="site-hero">
+
+            <header
+                class="pr__header"
+                data-uk-sticky="top: 100vh; animation: uk-animation-slide-top;"
+            >
+                <div class="uk-container">
+                    <div class="inner">
+                        <div class="logo">
+                            <div class="brand"></div>
+                        </div>
+                        <div class="navbar pr-font-second">
+                            <nav
+                                class="menu"
+                                data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true"
+                            >
+                                <ul>
+                                    <li><a href="#pr__hero">Home</a></li>
+                                    <li><a href="#pr__services">Services</a></li>
+                                    <li><a href="#pr__works">Works</a></li>
+                                    <li><a href="#pr__about">About</a></li>
+                                    <li><a href="#pr__clients">Team</a></li>
+                                    <li><a href="#pr__blog">Articles</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div
+                            class="navbar-tigger"
+                            data-uk-toggle="target: #navbar-mobile"
+                        >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Site Header End -->
+
+            <section class="pr__hero uk-section" id="pr__hero">
+                <div class="uk-container">
+                    <div class="section-inner">
+                        <div class="hero-content uk-grid" data-uk-grid="">
+                            <div class="uk-width-2-3@s">
+                                <hr class="line pr__hr__primary" />
+                                <h2 class="title uk-heading-hero">Your ultimate one stop</h2>
+                                <a
+                                    class="button uk-button uk-button-large uk-button-default uk-margin-top"
+                                    href="#pr__clients"
+                                    data-uk-scroll=""
+                                >Hire Us</a>
+                            </div>
+                            <div class="uk-width-1-3@s">
+                                <img src="assets/images/hero_01.png" alt="Hero Image" class="hero-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Site Hero End -->
+
+
+        <section
+          class="pr__features uk-section uk-padding-remove-bottom"
+          id="pr_features"
+        >
+          <div class="uk-container">
+            <div class="section-inner">
+              <div
+                class="items-listing features-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m"
+                data-uk-grid=""
+              >
+                <div class="item feature-box uk-active">
+                  <div class="inner">
+                    <i class="icon pr-leaf pr__icon__large"></i>
+                    <h3 class="title uk-h4">Creativity.</h3>
+                    <hr class="line pr__hr__secondary" />
+                    <p class="description">
+                      We nurture creativity through bold ideas, exploration, collaboration, and innovation.
+
+
+
+
+
+
+
+                    </p>
+                    <a href="#" class="link uk-position-cover"></a>
+                  </div>
+                </div>
+                <div class="item feature-box">
+                  <div class="inner">
+                    <i class="icon pr-earth pr__icon__large"></i>
+                    <h3 class="title uk-h4">Global Service</h3>
+                    <hr class="line pr__hr__secondary" />
+                    <p class="description">
+                      Our global service delivers consistent, high-quality solutions to clients worldwide.
+                    </p>
+                    <a href="#" class="link uk-position-cover"></a>
+                  </div>
+                </div>
+                <div class="item feature-box">
+                  <div class="inner">
+                    <i class="icon pr-users pr__icon__large"></i>
+                    <h3 class="title uk-h4">24/7 Support.</h3>
+                    <hr class="line pr__hr__secondary" />
+                    <p class="description">
+                      We offer 24 hours support, 7 days a week, ensuring assistance whenever you need it.
+                    </p>
+                    <a href="#" class="link uk-position-cover"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Features End -->
+      </div>
+      <!-- Hero Wrap End -->
+
+      <div class="pr__content" id="site-content">
+        <hr class="pr__vr__section" />
+        <section
+          class="pr__services pr__section uk-section uk-section-large "
+          id="pr__services"
+        >
+          <div class="section-outer">
+            <div class="section-heading">
+              <div class="uk-container">
+                <div class="inner">
+                  <div class="left">
+                    <hr class="line pr__hr__secondary" />
+                    <h2 class="title uk-h1">Services.</h2>
+                    <span class="subtitle pr__heading__secondary"
+                      >We work with you, Not for you</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="servicesection">
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="serviceh3">Website Development</h3>
+                        <p class="servicep">
+                          Building custom websites that are responsive, fast, and optimized for user experience
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="serviceh3">Graphics Designing</h3>
+                        <p class="servicep">
+                          Creating visually stunning graphics that capture attention and communicate your brand.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="serviceh3">Social Media Management</h3>
+                        <p class="servicep">
+                          Strategically managing social media accounts to boost engagement and grow your audience
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="serviceh3">Search Engine Optimization</h3>
+                        <p class="servicep">
+                          Improving website visibility on search engines to drive more organic traffic to your content.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="serviceh3">Video Production</h3>
+                        <p class="servicep">
+                          Producing high-quality videos that tell your story and engage your audience in a brilliant manner.
+                        </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="serviceh3">Email Marketing</h3>
+                        <p class="servicep">
+                          Crafting targeted email campaigns to convert leads and nurture customer relationships
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </section>
+        <hr class="pr__vr__section" />
+        <section
+          class="pr__works pr__section pr__dark section-slider uk-section uk-section-large"
+          id="pr__works"
+        >
+          <div class="section-outer">
+            <div class="section-heading">
+              <div class="uk-container">
+                <div class="inner">
+                  <div class="left">
+                    <hr class="line pr__hr__secondary" />
+                    <h2 class="title uk-h1">Portfolio</h2>
+                    <span class="subtitle pr__heading__secondary"
+                      >Take a look at our recent works</span
+                    >
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+            <div class="section-inner">
+              <div class="uk-container uk-container-no">
+                <div
+                  class="items-listing works-boxes works-slider owl-carousel"
+                  data-items="4"
+                  data-margin="30"
+                  data-loop="true"
+                  data-center="true"
+                  data-autoplay="true"
+                  data-dots="true"
+                >
+                  <div class="item work-box">
+                    <div class="outer">
+                      <div
+                        class="image pr__image__cover pr__ratio__square"
+                        data-src="assets/images/works/01.png"
+                        data-uk-img=""
+                      ></div>
+                      <div class="inner">
+                        <h3 class="title uk-h4">Iconic Law Firm</h3>
+                        <p class="category">Website</p>
+                        <a href="https://iconiclawfirm.com.np" target=”_blank” class="link uk-position-cover"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item work-box">
+                    <div class="outer">
+                      <div
+                        class="image pr__image__cover pr__ratio__square"
+                        data-src="assets/images/works/02.png"
+                        data-uk-img=""
+                      ></div>
+                      <div class="inner">
+                        <h3 class="title uk-h4">CBM College</h3>
+                        <p class="category">Website</p>
+                        <a href="https://cbm.edu.np" target=”_blank” class="link uk-position-cover"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item work-box">
+                    <div class="outer">
+                      <div
+                        class="image pr__image__cover pr__ratio__square"
+                        data-src="assets/images/works/03.png"
+                        data-uk-img=""
+                      ></div>
+                      <div class="inner">
+                        <h3 class="title uk-h4">CBM College</h3>
+                        <p class="category">Graphics</p>
+                        <a href="https://pin.it/6BUhCDqfm" target=”_blank” class="link uk-position-cover"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item work-box">
+                    <div class="outer">
+                      <div
+                        class="image pr__image__cover pr__ratio__square"
+                        data-src="assets/images/works/04.png"
+                        data-uk-img=""
+                      ></div>
+                      <div class="inner">
+                        <h3 class="title uk-h4">House of Jobs</h3>
+                        <p class="category">Design</p>
+                        <a href="https://pin.it/4MekVFJfT" target=”_blank” class="link uk-position-cover"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item work-box">
+                    <div class="outer">
+                      <div
+                        class="image pr__image__cover pr__ratio__square"
+                        data-src="assets/images/works/05.png"
+                        data-uk-img=""
+                      ></div>
+                      <div class="inner">
+                        <h3 class="title uk-h4">Impulse Investment</h3>
+                        <p class="category">Design</p>
+                        <a href="https://pin.it/u2GmoOwyT" target=”_blank” class="link uk-position-cover"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Works End -->
+
+        <hr class="pr__vr__section" />
+        <section
+          class="pr__about pr__section uk-section uk-section-large"
+          id="pr__about"
+        >
+          <div class="section-outer">
+            <div class="section-heading">
+              <div class="outer">
+                <div class="uk-container">
+                  <div class="inner uk-grid" data-uk-grid="">
+                    <div class="left uk-width-expand">
+                      <hr class="line pr__hr__secondary" />
+                      <h2 class="title uk-h1">About us.</h2>
+                      <span class="subtitle pr__heading__secondary"
+                        >Who we are</span
+                      >
+                    </div>
+                    
+                  </div>
+                </div>
+                <!-- Container End -->
+              </div>
+              <!-- Outer End -->
+            </div>
+            <!-- Heading End -->
+            <div class="section-inner">
+              <div class="uk-container">
+                <div
+                  class="gallery-boxes pr__grd__overlay uk-grid uk-grid-match uk-grid-medium"
+                  data-uk-grid=""
+                >
+                  <div class="left uk-width-expand">
+                    <div class="item gallery-box big">
+                      <div class="outer">
+                        <div
+                          class="image pr__image__cover"
+                          data-src="assets/images/dg.png"
+                          data-uk-img=""
+                        ></div>
+                       
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+                <div
+                  class="about-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m uk-margin-large-top"
+                  data-uk-grid=""
+                >
+                 
+               
+                  <div class="item about-box">
+                    <div class="outer">
+                      <div class="inner">
+                        <h3 class="title uk-h5">DG Lytix</h3>
+                        <p class="descriptions description" style="margin-top: 3vh;">
+                          The innovative heart of Dillibazar, Charkhal, houses DG Lytix, one such startup that moves forward with innovation at the forefront, powered by the passion and determination of a young team to create their influence in the tech industry. Founded by ambitious teenagers, DG Lytix gained notice from media due to their fresh approach towards digital solutions and unyielding resolve for excellence. Our mission is simple yet powerful: redefine possibilities in technology and empower both businesses and individuals alike with tools that make a difference
+                          </p>
+                          <p class=" description descriptions" style="margin-top: 3vh;">
+                          From software development and digital strategy to creative solutions, the knowledge that DG Lytix has holds fast to turning complex issues into opportunities for growth and innovation. We take pride in living the startup culture of creativity, collaboration, and resilience that pushes us further in pursuit of outstanding solutions. This is just the beginning, as we are excited to press on, driven by an all-consuming passion for progress and a commitment to excellence.
+                          </p>
+                          <p class="descriptions description" style="margin-top: 3vh;">
+                          Come join us at DG Lytix and continue innovating, inspiring, and shaping from scratch the face of technology as it stands today. Together, we are building solutions; we are building up the future.
+                          
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Container End -->
+            </div>
+            <!-- Inner End -->
+          </div>
+          <!-- Outer End -->
+        </section>
+        <!-- Section: About End -->
+
+        <hr class="pr__vr__section" />
+        <section
+          class="pr__clients pr__section pr__dark uk-section uk-section-large"
+          id="pr__clients"
+        >
+          <div class="uk-container">
+            <div class="section-outer">
+              <div
+                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
+                data-uk-grid=""
+              >
+                <div class="right uk-width-expand">
+                  <div class="section-heading">
+                    <div class="inner">
+                      <div class="left">
+                        <hr class="line pr__hr__secondary" />
+                        <h2 class="title uk-h1">Meet the team.</h2>
+                        <span class="subtitle pr__heading__secondary"
+                          >Mr Proficient </span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-inner">
+                    <div class="item client-box style-one">
+                      <div class="outer">
+                        <div class="inner">
+                          <p class="description">
+                            Gaurabh Sapkota, co-founder of DGLytix, leads the Administration and Finance Department. He is a proficient graphics designer and content writer. Moreover, he develops strategic roadmaps and creative solutions. His strong managerial skills and technical expertise have provided a solid foundation for DGLytix.
+                          </p>
+                          <h4 class="client">Gaurabh Sapkota, Co-founder</h4>
+                          <p class="description">gaurabhsapkota@gmail.com<br>+9779806723178</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left uk-width-2-5@m uk-flex-first">
+                  <div class="item client-box style-one client-image">
+                    <div
+                      class="image pr__image__cover pr__ratio__portrait"
+                      data-src="assets/images/gaurabh.jpg"
+                      data-uk-img=""
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
+                data-uk-grid=""
+              >
+                <div class="right uk-width-expand">
+                  <div class="section-heading">
+                    <div class="inner">
+                      <div class="left">
+                        <hr class="line pr__hr__secondary" />
+                        <h2 class="title uk-h1">Meet the team.</h2>
+                        <span class="subtitle pr__heading__secondary"
+                          >The Code Artist </span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-inner">
+                    <div class="item client-box style-one">
+                      <div class="outer">
+                        <div class="inner">
+                          <p class="description">
+                            Bikal Niraula, a skilled web developer specializes in crafting efficient, scalable websites with exclusive programming expertise. Known for clean, optimized code, Bikal combines technical proficiency with creative problem-solving to deliver high-quality web solutions. As a co-founder, his problem-solving skills play a crucial role in driving the success of the team and projects.
+                          </p>
+                          <h4 class="client">Bikal Niraula, Co-founder</h4>
+                          <p class="description">bikalniraulaofficial@gmail.com<br>+9779702046179</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left uk-width-2-5@m uk-flex-first">
+                  <div class="item client-box style-one client-image">
+                    <div
+                      class="image pr__image__cover pr__ratio__portrait"
+                      data-src="assets/images/bikal.jpg"
+                      data-uk-img=""
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
+                data-uk-grid=""
+              >
+                <div class="right uk-width-expand">
+                  <div class="section-heading">
+                    <div class="inner">
+                      <div class="left">
+                        <hr class="line pr__hr__secondary" />
+                        <h2 class="title uk-h1">Meet the team.</h2>
+                        <span class="subtitle pr__heading__secondary"
+                          >The Frame Wizard </span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-inner">
+                    <div class="item client-box style-one">
+                      <div class="outer">
+                        <div class="inner">
+                          <p class="description">
+                           
+Saroj Gautam, a skilled video editor specializes in transforming raw footage into captivating, high-quality videos. As a co-founder, his expertise in motion graphics, color grading, and precise editing plays a key role in the success of the team, delivering seamless and impactful visual stories.
+                          </p>
+                          <h4 class="client">Saroj Gautam, Co-founder</h4>
+<p class="description">sarojgautam014@gmail.com<br>+9779864239923</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left uk-width-2-5@m uk-flex-first">
+                  <div class="item client-box style-one client-image">
+                    <div
+                      class="image pr__image__cover pr__ratio__portrait"
+                      data-src="assets/images/saroj.jpg"
+                      data-uk-img=""
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div
+                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
+                data-uk-grid=""
+              >
+                <div class="right uk-width-expand">
+                  <div class="section-heading">
+                    <div class="inner">
+                      <div class="left">
+                        <hr class="line pr__hr__secondary" />
+                        <h2 class="title uk-h1">Meet the team.</h2>
+                        <span class="subtitle pr__heading__secondary"
+                          >The Strategy Maestro</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section-inner">
+                    <div class="item client-box style-one">
+                      <div class="outer">
+                        <div class="inner">
+                          <p class="description">
+                           
+                            Mandip Paudel, a co-founder, drives the company’s marketing and sales success with strategic leadership. As a proficient graphics designer, he combines creative design with business strategies to craft impactful campaigns and visuals, making him a key asset to the team.
+
+
+
+                          </p>
+                          <h4 class="client">Mandip Paudel, Co-founder</h4>
+                          <p  class="description">mandippaudel136@gmail.com <br>+9779869405146</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left uk-width-2-5@m uk-flex-first">
+                  <div class="item client-box style-one client-image">
+                    <div
+                      class="image pr__image__cover pr__ratio__portrait"
+                      data-src="assets/images/mandip.jpg"
+                      data-uk-img=""
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="uk-flex uk-flex-middle uk-grid uk-grid-large"
+              data-uk-grid=""
+            >
+              <div class="right uk-width-expand">
+                <div class="section-heading">
+                  <div class="inner">
+                    <div class="left">
+                      <hr class="line pr__hr__secondary" />
+                      <h2 class="title uk-h1">Meet the team.</h2>
+                      <span class="subtitle pr__heading__secondary"
+                        >The Design Dynamo</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="section-inner">
+                  <div class="item client-box style-one">
+                    <div class="outer">
+                      <div class="inner">
+                        <p class="description">
+                         
+                          Yugal Sapkota, a co-founder, is a skilled WordPress and front-end developer who also handles administration. He excels in creating dynamic, user-friendly websites while managing key operational tasks to ensure smooth business operations.
+
+
+
+                        </p>
+                        <h4 class="client">Yugal Sapkota, Co-founder</h4>
+                        <p  class="description">yugalsapkota321@gmail.com <br> +977 9865448601 </p>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left uk-width-2-5@m uk-flex-first">
+                <div class="item client-box style-one client-image">
+                  <div
+                    class="image pr__image__cover pr__ratio__portrait"
+                    data-src="assets/images/yugal.jpg"
+                    data-uk-img=""
+                  ></div>
+                </div>
+              </div>
+            </div>
+              <!-- Grid End -->
+            </div>
+            <!-- Outer End -->
+          </div>
+          <!-- Container End -->
+        </section>
+        <!-- Section: Clients End -->
+
+        <!-- Section: Clients Logos End -->
+
+        <hr class="pr__vr__section" />
+        <section
+          class="pr__blog pr__section section-slider uk-section uk-section-large"
+          id="pr__blog"
+        >
+          <div class="section-outer">
+            <div class="section-heading pr__center">
+              <div class="uk-container">
+                <div class="inner">
+                  <div class="center">
+                    <h2 class="title uk-h1">Blogs</h2>
+                    <span class="subtitle pr__heading__secondary"
+                    >Check out some of our works</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Container End -->
+            </div>
+            <!-- Heading End -->
+            <div class="section-inner" style="margin: auto; width: 45vw; z-index: -100;">
+              <div class="uk-container uk-container-no">
+                <div
+                  class="blog-listing style-one blog-slider "
+                  data-items="1"
+                  data-loop="true"
+                  data-center="true"
+                  data-margin="30"
+                 
+                >
+                  <article class="post type-post">
+                    <div class="outer">
+                      <div class="featured-image">
+                        <div
+                          class="image pr__image__cover"
+                          data-src="assets/images/ai.png"
+                          data-uk-img=""
+                        ></div>
+                      </div>
+                      <div class="inner">
+                        <h3 class="title uk-h5">
+                          <a href="#"
+                            > Use of Artificial Intelligence Among High School Students</a
+                          >
+                        </h3>
+                        <a href="#" class="more "></a>
+                        <a href="blogs.html" class="link"></a>
+                      </div>
+                    </div>
+                  </article>
+                  
+                </div>
+              </div>
+              <!-- Container End -->
+            </div>
+            <!-- Inner End -->
+          </div>
+          <!-- Outer End -->
+        </section>
+        <!-- Section: Blog End -->
+
+        <hr class="pr__vr__section" />
+      </div>
+      <!-- Site Content End -->
+
+      <section class="footersection">
+      <footer class="footer-distributed">
+      
+            <div class="footer-left">
+      
+             
+              <h3>DG Lytix</h3>
+              <p class="footer-links">
+                <a href="#pr__hero" class="link-1">Home</a>
+                
+                <a href="#pr__services">Services</a>
+              
+                <a href="#pr__works">Works</a>
+              
+                <a href="#pr__about">About</a>
+                
+                <a href="#pr__clients">Team</a>
+                
+                <a href="#pr__blogs">Articles</a>
+              </p>
+      
+              <p class="footer-company-name " style="color: white;">DG Lytix © 2023</p>
+            </div>
+      
+            <div class="footer-center">
+      
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Charkhal</span> Dillibazar, Kathmandu</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+977 9702046179</p>
+              </div>
+      
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p ><a style="color: white;" href="mailto:support@dglytix.com">support@dglytix.com</a></p>
+              </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <p class="footer-company-about">
+                <span>DG Lytix</span>
+                Join us at DG Lytix as we continue to innovate, inspire, and reshape the tech landscape from the ground up. Together, we're not just building solutions—we're building the future.
+              </p>
+      
+              <div class="footer-icons " >
+      
+                <a href="https://www.instagram.com/dglytix/"><i style="color: #5F16EBff;" class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/p/DG-Lytix-100094749812431/"><i style="color: #5F16EBff;" class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/dg-lytix/"><i style="color: #5F16EBff;" class="fa-brands fa-linkedin"></i></a>
+            
+      
+              </div>
+      
+            </div>
+      
+          </footer>
+
+    </div>
+   
+ <script src="assets/js/vanilla.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/anime.min.js"></script>
+    <script src="assets/js/pr.animation.js"></script>
+    <script src="assets/js/uikit.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
