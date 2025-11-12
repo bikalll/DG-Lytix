@@ -1,35 +1,94 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
-  <meta
-    http-equiv="content-type"
-    content="text/html;charset=UTF-8"
-  />
-
   <head>
-   <title>Web Development & Graphic Design Services | DG Lytix</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>Web Development & Graphic Design Services | DG Lytix</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#5F16EBff" />
-   <meta name="description" content="DG Lytix: Professional web development services tailored to grow your business. We create SEO-friendly, responsive websites and custom solutions. Get a free consultation now!">
+    <meta name="description" content="DG Lytix: Professional web development services tailored to grow your business. We create SEO-friendly, responsive websites and custom solutions. Get a free consultation now!">
     <meta name="keywords" content="graphic design, branding, logo design, creative designs, DG Lytix, web development">
-<meta property="og:title" content="Discover Stunning Graphic Designs by DG Lytix on Pinterest">
-<meta property="og:description" content="Explore our creative portfolio on Pinterest, featuring custom logos, branding, and marketing visuals. Follow us for inspiration!">
-<meta property="og:url" content="https://www.pinterest.com/dglytix/">
-<meta property="og:image" content="https://www.pinterest.com/pin/970736894677226315/">
-<meta name="p:domain_verify" content="89e3d8d5412ca6a2f531aa7a25fe9637"/>
+    <meta property="og:title" content="Discover Stunning Graphic Designs by DG Lytix on Pinterest">
+    <meta property="og:description" content="Explore our creative portfolio on Pinterest, featuring custom logos, branding, and marketing visuals. Follow us for inspiration!">
+    <meta property="og:url" content="https://www.pinterest.com/dglytix/">
+    <meta property="og:image" content="https://www.pinterest.com/pin/970736894677226315/">
+    <meta name="p:domain_verify" content="89e3d8d5412ca6a2f531aa7a25fe9637"/>
     <link rel="stylesheet" href="assets/css/mystyle.css" />
-<link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" /><link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" /><link rel="shortcut icon" href="assets/images/favicon/favicon.ico" /><link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" /><link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
     <link href="style.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      /* Contact Form Styles */
+      .pr__contact {
+        background-color: #fafafa;
+      }
+
+      .pr__contact .pr__form {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .pr__contact .pr__form input,
+      .pr__contact .pr__form textarea {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        background: white;
+      }
+
+      .pr__contact .pr__form input:focus,
+      .pr__contact .pr__form textarea:focus {
+        border-color: #5F16EBff;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(95, 22, 235, 0.1);
+      }
+
+      .pr__contact .pr__form label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block;
+        color: #101010;
+      }
+
+      .pr__contact .pr__form .required {
+        color: #e74c3c;
+      }
+
+      .pr__contact .uk-button {
+        background: #5F16EBff;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        font-size: 18px;
+        transition: all 0.3s ease;
+      }
+
+      .pr__contact .uk-button:hover {
+        background: #4a10c2;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(95, 22, 235, 0.3);
+      }
+      
+      /* Success message styling */
+      .form-success {
+        display: none;
+        background: #d4edda;
+        color: #155724;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body class="home front-page">
@@ -54,113 +113,80 @@
     <div class="circle"></div>
     <div class="circle"></div>
     <div id="spinloader" class="load">
-        <hr /><hr /><hr /><hr />
+      <hr /><hr /><hr /><hr />
     </div>
 
-    <div
-        class="pr__mobile__nav"
-        id="navbar-mobile"
-        data-uk-offcanvas="overlay: true; flip: true; mode: none"
-    >
-        <div class="uk-offcanvas-bar">
-            <button
-                class="uk-offcanvas-close"
-                type="button"
-                data-uk-close="ratio: 2;"
-            ></button>
+    <div class="pr__mobile__nav" id="navbar-mobile" data-uk-offcanvas="overlay: true; flip: true; mode: none">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" data-uk-close="ratio: 2;"></button>
 
-            <nav
-                class="menu"
-                data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true"
-            >
-                <ul
-                    data-uk-scrollspy="target: > li; cls:uk-animation-slide-right; delay: 100; repeat: true;"
-                >
-                    <li><a href="#pr__hero">Home</a></li>
-                    <li><a href="#pr__services">Services</a></li>
-                    <li><a href="#pr__works">Portfolio
-                    </a></li>
-                    <li><a href="#pr__about">About</a></li>
-                    <li><a href="#pr__clients">Team</a></li>
-                    <li><a href="#pr__blog">Articles</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="menu" data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true">
+          <ul data-uk-scrollspy="target: > li; cls:uk-animation-slide-right; delay: 100; repeat: true;">
+            <li><a href="#pr__hero">Home</a></li>
+            <li><a href="#pr__services">Services</a></li>
+            <li><a href="#pr__works">Portfolio</a></li>
+            <li><a href="#pr__about">About</a></li>
+            <li><a href="#pr__clients">Team</a></li>
+            <li><a href="#pr__blog">Articles</a></li>
+            <li><a href="#pr__contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <div class="pr__wrapper" id="site-wrapper">
-        <div class="pr__hero__wrap" id="site-hero">
+      <div class="pr__hero__wrap" id="site-hero">
+        <header class="pr__header" data-uk-sticky="top: 100vh; animation: uk-animation-slide-top;">
+          <div class="uk-container">
+            <div class="inner">
+              <div class="logo">
+                <div class="brand"></div>
+              </div>
+              <div class="navbar pr-font-second">
+                <nav class="menu" data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true">
+                  <ul>
+                    <li><a href="#pr__hero">Home</a></li>
+                    <li><a href="#pr__services">Services</a></li>
+                    <li><a href="#pr__works">Works</a></li>
+                    <li><a href="#pr__about">About</a></li>
+                    <li><a href="#pr__clients">Team</a></li>
+                    <li><a href="#pr__blog">Articles</a></li>
+                    <li><a href="#pr__contact">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="navbar-tigger" data-uk-toggle="target: #navbar-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Site Header End -->
 
-            <header
-                class="pr__header"
-                data-uk-sticky="top: 100vh; animation: uk-animation-slide-top;"
-            >
-                <div class="uk-container">
-                    <div class="inner">
-                        <div class="logo">
-                            <div class="brand"></div>
-                        </div>
-                        <div class="navbar pr-font-second">
-                            <nav
-                                class="menu"
-                                data-uk-scrollspy-nav="offset: 0; closest: li; scroll: true"
-                            >
-                                <ul>
-                                    <li><a href="#pr__hero">Home</a></li>
-                                    <li><a href="#pr__services">Services</a></li>
-                                    <li><a href="#pr__works">Works</a></li>
-                                    <li><a href="#pr__about">About</a></li>
-                                    <li><a href="#pr__clients">Team</a></li>
-                                    <li><a href="#pr__blog">Articles</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div
-                            class="navbar-tigger"
-                            data-uk-toggle="target: #navbar-mobile"
-                        >
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- Site Header End -->
-
-            <section class="pr__hero uk-section" id="pr__hero">
-                <div class="uk-container">
-                    <div class="section-inner">
-                        <div class="hero-content uk-grid" data-uk-grid="">
-                            <div class="uk-width-2-3@s">
-                                <hr class="line pr__hr__primary" />
-                                <h2 class="title uk-heading-hero">Your ultimate one stop</h2>
-                                <a
-                                    class="button uk-button uk-button-large uk-button-default uk-margin-top"
-                                    href="#pr__clients"
-                                    data-uk-scroll=""
-                                >Hire Us</a>
-                            </div>
-                            <div class="uk-width-1-3@s">
-                                <img src="assets/images/hero_01.png" alt="Hero Image" class="hero-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Site Hero End -->
-
-
-        <section
-          class="pr__features uk-section uk-padding-remove-bottom"
-          id="pr_features"
-        >
+        <section class="pr__hero uk-section" id="pr__hero">
           <div class="uk-container">
             <div class="section-inner">
-              <div
-                class="items-listing features-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m"
-                data-uk-grid=""
-              >
+              <div class="hero-content uk-grid" data-uk-grid="">
+                <div class="uk-width-2-3@s">
+                  <hr class="line pr__hr__primary" />
+                  <h2 class="title uk-heading-hero">Your ultimate one stop</h2>
+                  <a class="button uk-button uk-button-large uk-button-default uk-margin-top" href="#pr__clients" data-uk-scroll="">Hire Us</a>
+                </div>
+                <div class="uk-width-1-3@s">
+                  <img src="assets/images/hero_01.png" alt="Hero Image" class="hero-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Site Hero End -->
+
+        <section class="pr__features uk-section uk-padding-remove-bottom" id="pr_features">
+          <div class="uk-container">
+            <div class="section-inner">
+              <div class="items-listing features-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m" data-uk-grid="">
                 <div class="item feature-box uk-active">
                   <div class="inner">
                     <i class="icon pr-leaf pr__icon__large"></i>
@@ -168,13 +194,6 @@
                     <hr class="line pr__hr__secondary" />
                     <p class="description">
                       We nurture creativity through bold ideas, exploration, collaboration, and innovation.
-
-
-
-
-
-
-
                     </p>
                     <a href="#" class="link uk-position-cover"></a>
                   </div>
@@ -211,10 +230,7 @@
 
       <div class="pr__content" id="site-content">
         <hr class="pr__vr__section" />
-        <section
-          class="pr__services pr__section uk-section uk-section-large "
-          id="pr__services"
-        >
+        <section class="pr__services pr__section uk-section uk-section-large" id="pr__services">
           <div class="section-outer">
             <div class="section-heading">
               <div class="uk-container">
@@ -222,9 +238,7 @@
                   <div class="left">
                     <hr class="line pr__hr__secondary" />
                     <h2 class="title uk-h1">Services.</h2>
-                    <span class="subtitle pr__heading__secondary"
-                      >We work with you, Not for you</span
-                    >
+                    <span class="subtitle pr__heading__secondary">We work with you, Not for you</span>
                   </div>
                 </div>
               </div>
@@ -232,81 +246,78 @@
           </div>
           <section class="servicesection">
             <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3 class="serviceh3">Website Development</h3>
-                        <p class="servicep">
-                          Building custom websites that are responsive, fast, and optimized for user experience
-                        </p>
-                    </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-code"></i>
+                  </div>
+                  <h3 class="serviceh3">Website Development</h3>
+                  <p class="servicep">
+                    Building custom websites that are responsive, fast, and optimized for user experience
+                  </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3 class="serviceh3">Graphics Designing</h3>
-                        <p class="servicep">
-                          Creating visually stunning graphics that capture attention and communicate your brand.
-                        </p>
-                    </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-palette"></i>
+                  </div>
+                  <h3 class="serviceh3">Graphics Designing</h3>
+                  <p class="servicep">
+                    Creating visually stunning graphics that capture attention and communicate your brand.
+                  </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                        <h3 class="serviceh3">Social Media Management</h3>
-                        <p class="servicep">
-                          Strategically managing social media accounts to boost engagement and grow your audience
-                        </p>
-                    </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-tasks"></i>
+                  </div>
+                  <h3 class="serviceh3">Social Media Management</h3>
+                  <p class="servicep">
+                    Strategically managing social media accounts to boost engagement and grow your audience
+                  </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h3 class="serviceh3">Search Engine Optimization</h3>
-                        <p class="servicep">
-                          Improving website visibility on search engines to drive more organic traffic to your content.
-                        </p>
-                    </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <h3 class="serviceh3">Search Engine Optimization</h3>
+                  <p class="servicep">
+                    Improving website visibility on search engines to drive more organic traffic to your content.
+                  </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <h3 class="serviceh3">Video Production</h3>
-                        <p class="servicep">
-                          Producing high-quality videos that tell your story and engage your audience in a brilliant manner.
-                        </p>
-                    </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-film"></i>
+                  </div>
+                  <h3 class="serviceh3">Video Production</h3>
+                  <p class="servicep">
+                    Producing high-quality videos that tell your story and engage your audience in a brilliant manner.
+                  </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="icon-wrapper">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3 class="serviceh3">Email Marketing</h3>
-                        <p class="servicep">
-                          Crafting targeted email campaigns to convert leads and nurture customer relationships
-                        </p>
-                    </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <div class="icon-wrapper">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <h3 class="serviceh3">Email Marketing</h3>
+                  <p class="servicep">
+                    Crafting targeted email campaigns to convert leads and nurture customer relationships
+                  </p>
                 </div>
+              </div>
             </div>
+          </section>
         </section>
-        
-        </section>
+
         <hr class="pr__vr__section" />
-        <section
-          class="pr__works pr__section pr__dark section-slider uk-section uk-section-large"
-          id="pr__works"
-        >
+        <section class="pr__works pr__section pr__dark section-slider uk-section uk-section-large" id="pr__works">
           <div class="section-outer">
             <div class="section-heading">
               <div class="uk-container">
@@ -314,93 +325,61 @@
                   <div class="left">
                     <hr class="line pr__hr__secondary" />
                     <h2 class="title uk-h1">Portfolio</h2>
-                    <span class="subtitle pr__heading__secondary"
-                      >Take a look at our recent works</span
-                    >
+                    <span class="subtitle pr__heading__secondary">Take a look at our recent works</span>
                   </div>
-                 
                 </div>
               </div>
             </div>
             <div class="section-inner">
               <div class="uk-container uk-container-no">
-                <div
-                  class="items-listing works-boxes works-slider owl-carousel"
-                  data-items="4"
-                  data-margin="30"
-                  data-loop="true"
-                  data-center="true"
-                  data-autoplay="true"
-                  data-dots="true"
-                >
+                <div class="items-listing works-boxes works-slider owl-carousel" data-items="4" data-margin="30" data-loop="true" data-center="true" data-autoplay="true" data-dots="true">
                   <div class="item work-box">
                     <div class="outer">
-                      <div
-                        class="image pr__image__cover pr__ratio__square"
-                        data-src="assets/images/works/01.png"
-                        data-uk-img=""
-                      ></div>
+                      <div class="image pr__image__cover pr__ratio__square" data-src="assets/images/works/01.png" data-uk-img=""></div>
                       <div class="inner">
                         <h3 class="title uk-h4">Iconic Law Firm</h3>
                         <p class="category">Website</p>
-                        <a href="https://iconiclawfirm.com.np" target=”_blank” class="link uk-position-cover"></a>
+                        <a href="https://iconiclawfirm.com.np" target="_blank" class="link uk-position-cover"></a>
                       </div>
                     </div>
                   </div>
                   <div class="item work-box">
                     <div class="outer">
-                      <div
-                        class="image pr__image__cover pr__ratio__square"
-                        data-src="assets/images/works/tea.jpeg"
-                        data-uk-img=""
-                      style="background-image: url(&quot;https://dglytix.com/assets/images/works/tea.jpeg&quot;);"
-                      ></div>
+                      <div class="image pr__image__cover pr__ratio__square" data-src="assets/images/works/tea.jpeg" data-uk-img="" style="background-image: url(&quot;https://dglytix.com/assets/images/works/tea.jpeg&quot;);"></div>
                       <div class="inner">
                         <h3 class="title uk-h4">Chaha Tea</h3>
                         <p class="category">Design</p>
-                        <a href="https://pin.it/2XcJ2sQH1" target=”_blank” class="link uk-position-cover"></a>
+                        <a href="https://pin.it/2XcJ2sQH1" target="_blank" class="link uk-position-cover"></a>
                       </div>
                     </div>
                   </div>
                   <div class="item work-box">
                     <div class="outer">
-                      <div
-                        class="image pr__image__cover pr__ratio__square"
-                        data-src="assets/images/works/03.png"
-                        data-uk-img=""
-                      ></div>
+                      <div class="image pr__image__cover pr__ratio__square" data-src="assets/images/works/03.png" data-uk-img=""></div>
                       <div class="inner">
                         <h3 class="title uk-h4">CBM College</h3>
                         <p class="category">Graphics</p>
-                        <a href="https://pin.it/6BUhCDqfm" target=”_blank” class="link uk-position-cover"></a>
+                        <a href="https://pin.it/6BUhCDqfm" target="_blank" class="link uk-position-cover"></a>
                       </div>
                     </div>
                   </div>
                   <div class="item work-box">
                     <div class="outer">
-                      <div
-                        class="image pr__image__cover pr__ratio__square"
-                        data-src="assets/images/works/04.png"
-                        data-uk-img=""
-                      ></div>
+                      <div class="image pr__image__cover pr__ratio__square" data-src="assets/images/works/04.png" data-uk-img=""></div>
                       <div class="inner">
                         <h3 class="title uk-h4">House of Jobs</h3>
                         <p class="category">Design</p>
-                        <a href="https://pin.it/4MekVFJfT" target=”_blank” class="link uk-position-cover"></a>
+                        <a href="https://pin.it/4MekVFJfT" target="_blank" class="link uk-position-cover"></a>
                       </div>
                     </div>
                   </div>
                   <div class="item work-box">
                     <div class="outer">
-                      <div
-                        class="image pr__image__cover pr__ratio__square"
-                        data-src="assets/images/works/05.png"
-                        data-uk-img=""
-                      ></div>
+                      <div class="image pr__image__cover pr__ratio__square" data-src="assets/images/works/05.png" data-uk-img=""></div>
                       <div class="inner">
                         <h3 class="title uk-h4">Impulse Investment</h3>
                         <p class="category">Design</p>
-                        <a href="https://pin.it/u2GmoOwyT" target=”_blank” class="link uk-position-cover"></a>
+                        <a href="https://pin.it/u2GmoOwyT" target="_blank" class="link uk-position-cover"></a>
                       </div>
                     </div>
                   </div>
@@ -412,10 +391,7 @@
         <!-- Section: Works End -->
 
         <hr class="pr__vr__section" />
-        <section
-          class="pr__about pr__section uk-section uk-section-large"
-          id="pr__about"
-        >
+        <section class="pr__about pr__section uk-section uk-section-large" id="pr__about">
           <div class="section-outer">
             <div class="section-heading">
               <div class="outer">
@@ -424,11 +400,8 @@
                     <div class="left uk-width-expand">
                       <hr class="line pr__hr__secondary" />
                       <h2 class="title uk-h1">Our Mission.</h2>
-                      <span class="subtitle pr__heading__secondary"
-                        >Who we are</span
-                      >
+                      <span class="subtitle pr__heading__secondary">Who we are</span>
                     </div>
-                    
                   </div>
                 </div>
                 <!-- Container End -->
@@ -438,44 +411,28 @@
             <!-- Heading End -->
             <div class="section-inner">
               <div class="uk-container">
-                <div
-                  class="gallery-boxes pr__grd__overlay uk-grid uk-grid-match uk-grid-medium"
-                  data-uk-grid=""
-                >
+                <div class="gallery-boxes pr__grd__overlay uk-grid uk-grid-match uk-grid-medium" data-uk-grid="">
                   <div class="left uk-width-expand">
                     <div class="item gallery-box big">
                       <div class="outer">
-                        <div
-                          class="image pr__image__cover"
-                          data-src="assets/images/dg.png"
-                          data-uk-img=""
-                        ></div>
-                       
+                        <div class="image pr__image__cover" data-src="assets/images/dg.png" data-uk-img=""></div>
                       </div>
                     </div>
                   </div>
-                
                 </div>
-                <div
-                  class="about-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m uk-margin-large-top"
-                  data-uk-grid=""
-                >
-                 
-               
+                <div class="about-boxes uk-grid uk-grid-match uk-grid-medium uk-child-width-1-3@m uk-margin-large-top" data-uk-grid="">
                   <div class="item about-box">
                     <div class="outer">
                       <div class="inner">
                         <h3 class="title uk-h5">DG Lytix</h3>
                         <p class="descriptions description" style="margin-top: 3vh;">
-                         In Nepal, many local vendors continue to operate through traditional methods, without any digital presence. They lack social media visibility, websites, and access to online marketplaces, even those who sell Nepal’s most authentic cultural products.
-
-                          </p>
-                          <p class=" description descriptions" style="margin-top: 3vh;">
-                         To address this gap, DGLytix was founded. Our mission is to empower small vendors with simple, accessible digital tools. We help them build their social media presence, bring their products online, and connect them with a wider customer base.
-
-                          </p>
-                          <p class="descriptions description" style="margin-top: 3vh;">
-                       DGLytix aims to bridge the digital divide and support Nepal’s local businesses in growing sustainably in the digital age. It exists to bridge the gap and make sure local businesses aren’t left behind in the digital world.
+                          In Nepal, many local vendors continue to operate through traditional methods, without any digital presence. They lack social media visibility, websites, and access to online marketplaces, even those who sell Nepal's most authentic cultural products.
+                        </p>
+                        <p class=" description descriptions" style="margin-top: 3vh;">
+                          To address this gap, DGLytix was founded. Our mission is to empower small vendors with simple, accessible digital tools. We help them build their social media presence, bring their products online, and connect them with a wider customer base.
+                        </p>
+                        <p class="descriptions description" style="margin-top: 3vh;">
+                          DGLytix aims to bridge the digital divide and support Nepal's local businesses in growing sustainably in the digital age. It exists to bridge the gap and make sure local businesses aren't left behind in the digital world.
                         </p>
                       </div>
                     </div>
@@ -491,25 +448,17 @@
         <!-- Section: About End -->
 
         <hr class="pr__vr__section" />
-        <section
-          class="pr__clients pr__section pr__dark uk-section uk-section-large"
-          id="pr__clients"
-        >
+        <section class="pr__clients pr__section pr__dark uk-section uk-section-large" id="pr__clients">
           <div class="uk-container">
             <div class="section-outer">
-              <div
-                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
-                data-uk-grid=""
-              >
+              <div class="uk-flex uk-flex-middle uk-grid uk-grid-large" data-uk-grid="">
                 <div class="right uk-width-expand">
                   <div class="section-heading">
                     <div class="inner">
                       <div class="left">
                         <hr class="line pr__hr__secondary" />
                         <h2 class="title uk-h1">Meet the team.</h2>
-                        <span class="subtitle pr__heading__secondary"
-                          >Mr Proficient </span
-                        >
+                        <span class="subtitle pr__heading__secondary">Mr Proficient </span>
                       </div>
                     </div>
                   </div>
@@ -529,27 +478,18 @@
                 </div>
                 <div class="left uk-width-2-5@m uk-flex-first">
                   <div class="item client-box style-one client-image">
-                    <div
-                      class="image pr__image__cover pr__ratio__portrait"
-                      data-src="assets/images/gaurabh.jpg"
-                      data-uk-img="" alt="Gaurabh Sapkota , co-founder at DG Lytix"
-                    ></div>
+                    <div class="image pr__image__cover pr__ratio__portrait" data-src="assets/images/gaurabh.jpg" data-uk-img="" alt="Gaurabh Sapkota , co-founder at DG Lytix"></div>
                   </div>
                 </div>
               </div>
-              <div
-                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
-                data-uk-grid=""
-              >
+              <div class="uk-flex uk-flex-middle uk-grid uk-grid-large" data-uk-grid="">
                 <div class="right uk-width-expand">
                   <div class="section-heading">
                     <div class="inner">
                       <div class="left">
                         <hr class="line pr__hr__secondary" />
                         <h2 class="title uk-h1">Meet the team.</h2>
-                        <span class="subtitle pr__heading__secondary"
-                          >The Code Artist </span
-                        >
+                        <span class="subtitle pr__heading__secondary">The Code Artist </span>
                       </div>
                     </div>
                   </div>
@@ -569,28 +509,19 @@
                 </div>
                 <div class="left uk-width-2-5@m uk-flex-first">
                   <div class="item client-box style-one client-image">
-                    <div
-                      class="image pr__image__cover pr__ratio__portrait"
-                      data-src="assets/images/bikal.jpg"
-                      data-uk-img="" alt="Bikal Niraula, the co-founder at DG Lytix folding hands , smiling , with the background of a tree"
-                    ></div>
+                    <div class="image pr__image__cover pr__ratio__portrait" data-src="assets/images/bikal.jpg" data-uk-img="" alt="Bikal Niraula, the co-founder at DG Lytix folding hands , smiling , with the background of a tree"></div>
                   </div>
                 </div>
               </div>
-              
-              <div
-                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
-                data-uk-grid=""
-              >
+
+              <div class="uk-flex uk-flex-middle uk-grid uk-grid-large" data-uk-grid="">
                 <div class="right uk-width-expand">
                   <div class="section-heading">
                     <div class="inner">
                       <div class="left">
                         <hr class="line pr__hr__secondary" />
                         <h2 class="title uk-h1">Meet the team.</h2>
-                        <span class="subtitle pr__heading__secondary"
-                          >The Frame Wizard </span
-                        >
+                        <span class="subtitle pr__heading__secondary">The Frame Wizard </span>
                       </div>
                     </div>
                   </div>
@@ -599,11 +530,10 @@
                       <div class="outer">
                         <div class="inner">
                           <p class="description">
-                           
-Saroj Gautam, a skilled video editor specializes in transforming raw footage into captivating, high-quality videos. As a co-founder, his expertise in motion graphics, color grading, and precise editing plays a key role in the success of the team, delivering seamless and impactful visual stories.
+                            Saroj Gautam, a skilled video editor specializes in transforming raw footage into captivating, high-quality videos. As a co-founder, his expertise in motion graphics, color grading, and precise editing plays a key role in the success of the team, delivering seamless and impactful visual stories.
                           </p>
                           <h4 class="client">Saroj Gautam, Co-founder</h4>
-<p class="description">sarojgautam014@gmail.com<br>+9779864239923</p>
+                          <p class="description">sarojgautam014@gmail.com<br>+9779864239923</p>
                         </div>
                       </div>
                     </div>
@@ -611,28 +541,19 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
                 </div>
                 <div class="left uk-width-2-5@m uk-flex-first">
                   <div class="item client-box style-one client-image">
-                    <div
-                      class="image pr__image__cover pr__ratio__portrait"
-                      data-src="assets/images/saroj.jpg"
-                      data-uk-img=""
-                    ></div>
+                    <div class="image pr__image__cover pr__ratio__portrait" data-src="assets/images/saroj.jpg" data-uk-img=""></div>
                   </div>
                 </div>
               </div>
-              
-              <div
-                class="uk-flex uk-flex-middle uk-grid uk-grid-large"
-                data-uk-grid=""
-              >
+
+              <div class="uk-flex uk-flex-middle uk-grid uk-grid-large" data-uk-grid="">
                 <div class="right uk-width-expand">
                   <div class="section-heading">
                     <div class="inner">
                       <div class="left">
                         <hr class="line pr__hr__secondary" />
                         <h2 class="title uk-h1">Meet the team.</h2>
-                        <span class="subtitle pr__heading__secondary"
-                          >The Strategy Maestro</span
-                        >
+                        <span class="subtitle pr__heading__secondary">The Strategy Maestro</span>
                       </div>
                     </div>
                   </div>
@@ -641,14 +562,10 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
                       <div class="outer">
                         <div class="inner">
                           <p class="description">
-                           
-                            Mandip Paudel, a co-founder, drives the company’s marketing and sales success with strategic leadership. As a proficient graphics designer, he combines creative design with business strategies to craft impactful campaigns and visuals, making him a key asset to the team.
-
-
-
+                            Mandip Paudel, a co-founder, drives the company's marketing and sales success with strategic leadership. As a proficient graphics designer, he combines creative design with business strategies to craft impactful campaigns and visuals, making him a key asset to the team.
                           </p>
                           <h4 class="client">Mandip Paudel, Co-founder</h4>
-                          <p  class="description">mandippaudel136@gmail.com <br>+9779869405146</p>
+                          <p class="description">mandippaudel136@gmail.com <br>+9779869405146</p>
                         </div>
                       </div>
                     </div>
@@ -656,59 +573,41 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
                 </div>
                 <div class="left uk-width-2-5@m uk-flex-first">
                   <div class="item client-box style-one client-image">
-                    <div
-                      class="image pr__image__cover pr__ratio__portrait"
-                      data-src="assets/images/mandip.jpg"
-                      data-uk-img=""
-                    ></div>
+                    <div class="image pr__image__cover pr__ratio__portrait" data-src="assets/images/mandip.jpg" data-uk-img=""></div>
                   </div>
                 </div>
               </div>
-              <div
-              class="uk-flex uk-flex-middle uk-grid uk-grid-large"
-              data-uk-grid=""
-            >
-              <div class="right uk-width-expand">
-                <div class="section-heading">
-                  <div class="inner">
-                    <div class="left">
-                      <hr class="line pr__hr__secondary" />
-                      <h2 class="title uk-h1">Meet the team.</h2>
-                      <span class="subtitle pr__heading__secondary"
-                        >The Design Dynamo</span
-                      >
+              <div class="uk-flex uk-flex-middle uk-grid uk-grid-large" data-uk-grid="">
+                <div class="right uk-width-expand">
+                  <div class="section-heading">
+                    <div class="inner">
+                      <div class="left">
+                        <hr class="line pr__hr__secondary" />
+                        <h2 class="title uk-h1">Meet the team.</h2>
+                        <span class="subtitle pr__heading__secondary">The Design Dynamo</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="section-inner">
-                  <div class="item client-box style-one">
-                    <div class="outer">
-                      <div class="inner">
-                        <p class="description">
-                         
-                       Yugal Sapkota, a co-founder, is a skilled WordPress and front-end developer who also handles administration,masters in creating dynamic, user-friendly websites while managing key operational tasks to ensure smooth business operations.
-
-
-
-                        </p>
-                        <h4 class="client">Yugal Sapkota, Co-founder</h4>
-                        <p  class="description">yugalsapkota321@gmail.com<br> +977 9865448601 </p>
-                       
+                  <div class="section-inner">
+                    <div class="item client-box style-one">
+                      <div class="outer">
+                        <div class="inner">
+                          <p class="description">
+                            Yugal Sapkota, a co-founder, is a skilled WordPress and front-end developer who also handles administration,masters in creating dynamic, user-friendly websites while managing key operational tasks to ensure smooth business operations.
+                          </p>
+                          <h4 class="client">Yugal Sapkota, Co-founder</h4>
+                          <p class="description">yugalsapkota321@gmail.com<br> +977 9865448601 </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="left uk-width-2-5@m uk-flex-first">
-                <div class="item client-box style-one client-image">
-                  <div
-                    class="image pr__image__cover pr__ratio__portrait"
-                    data-src="assets/images/yugal.jpg"
-                    data-uk-img=""
-                  ></div>
+                <div class="left uk-width-2-5@m uk-flex-first">
+                  <div class="item client-box style-one client-image">
+                    <div class="image pr__image__cover pr__ratio__portrait" data-src="assets/images/yugal.jpg" data-uk-img=""></div>
+                  </div>
                 </div>
               </div>
-            </div>
               <!-- Grid End -->
             </div>
             <!-- Outer End -->
@@ -720,18 +619,14 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
         <!-- Section: Clients Logos End -->
 
         <hr class="pr__vr__section" />
-        <section
-          class="pr__blog pr__section section-slider uk-section uk-section-large"
-          id="pr__blog"
-        >
+        <section class="pr__blog pr__section section-slider uk-section uk-section-large" id="pr__blog">
           <div class="section-outer">
             <div class="section-heading pr__center">
               <div class="uk-container">
                 <div class="inner">
                   <div class="center">
                     <h2 class="title uk-h1">Blogs</h2>
-                    <span class="subtitle pr__heading__secondary"
-                    >Check out some of our works</span>
+                    <span class="subtitle pr__heading__secondary">Check out some of our works</span>
                   </div>
                 </div>
               </div>
@@ -740,35 +635,21 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
             <!-- Heading End -->
             <div class="section-inner" style="margin: auto; width: 45vw; z-index: -100;">
               <div class="uk-container uk-container-no">
-                <div
-                  class="blog-listing style-one blog-slider "
-                  data-items="1"
-                  data-loop="true"
-                  data-center="true"
-                  data-margin="30"
-                 
-                >
+                <div class="blog-listing style-one blog-slider" data-items="1" data-loop="true" data-center="true" data-margin="30">
                   <article class="post type-post">
                     <div class="outer">
                       <div class="featured-image">
-                        <div
-                          class="image pr__image__cover"
-                          data-src="assets/images/ai.png"
-                          data-uk-img=""
-                        ></div>
+                        <div class="image pr__image__cover" data-src="assets/images/ai.png" data-uk-img=""></div>
                       </div>
                       <div class="inner">
                         <h3 class="title uk-h5">
-                          <a href="#"
-                            > Use of Artificial Intelligence Among High School Students</a
-                          >
+                          <a href="#"> Use of Artificial Intelligence Among High School Students</a>
                         </h3>
                         <a href="#" class="more "></a>
                         <a href="/Blogs/" class="link"></a>
                       </div>
                     </div>
                   </article>
-                  
                 </div>
               </div>
               <!-- Container End -->
@@ -780,75 +661,117 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
         <!-- Section: Blog End -->
 
         <hr class="pr__vr__section" />
+        
+        <!-- Contact Form Section -->
+        <section class="pr__contact pr__section uk-section uk-section-large" id="pr__contact">
+          <div class="section-outer">
+            <div class="section-heading pr__center">
+              <div class="uk-container">
+                <div class="inner">
+                  <div class="center">
+                    <hr class="line pr__hr__secondary" />
+                    <h2 class="title uk-h1">Get In Touch</h2>
+                    <span class="subtitle pr__heading__secondary">We'd love to hear from you</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-inner">
+              <div class="uk-container">
+                <div class="pr__form">
+                  <form id="contactForm">
+                    <div class="uk-grid uk-grid-large" data-uk-grid>
+                      <div class="uk-width-1-2@s">
+                        <div class="pr__form__group">
+                          <label for="name">Full Name <span class="required">*</span></label>
+                          <input type="text" id="name" name="name" required>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-2@s">
+                        <div class="pr__form__group">
+                          <label for="email">Email Address <span class="required">*</span></label>
+                          <input type="email" id="email" name="email" required>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-1">
+                        <div class="pr__form__group">
+                          <label for="subject">Subject <span class="required">*</span></label>
+                          <input type="text" id="subject" name="subject" required>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-1">
+                        <div class="pr__form__group">
+                          <label for="message">Message <span class="required">*</span></label>
+                          <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-1">
+                        <button type="submit" class="uk-button uk-button-primary uk-button-large">
+                          Send Message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <div id="formSuccess" class="form-success">
+                    Thank you for your message! We will get back to you soon.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Form Section End -->
+        
       </div>
       <!-- Site Content End -->
 
       <section class="footersection">
-      <footer class="footer-distributed">
-      
-            <div class="footer-left">
-      
-             
-              <h3>DG Lytix</h3>
-              <p class="footer-links">
-                <a href="#pr__hero" class="link-1">Home</a>
-                
-                <a href="#pr__services">Services</a>
-              
-                <a href="#pr__works">Works</a>
-              
-                <a href="#pr__about">About</a>
-                
-                <a href="#pr__clients">Team</a>
-                
-                <a href="#pr__blogs">Articles</a>
-              </p>
-      
-              <p class="footer-company-name " style="color: white;">DG Lytix © 2023</p>
-            </div>
-      
-            <div class="footer-center">
-      
-              <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>Charkhal</span> Dillibazar, Kathmandu</p>
-              </div>
-      
-              <div>
-                <i class="fa fa-phone"></i>
-                <p>+977 9702046179</p>
-              </div>
-      
-              <div>
-                <i class="fa fa-envelope"></i>
-                <p ><a style="color: white;" href="mailto:support@dglytix.com">support@dglytix.com</a></p>
-              </div>
-      
-            </div>
-      
-            <div class="footer-right">
-      
-              <p class="footer-company-about">
-                <span>DG Lytix</span>
-                Join us at DG Lytix as we continue to innovate, inspire, and reshape the tech landscape from the ground up. Together, we're not just building solutions—we're building the future.
-              </p>
-      
-              <div class="footer-icons " >
-      
-                <a href="https://www.instagram.com/dglytix/"><i style="color: #5F16EBff;" class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/p/DG-Lytix-100094749812431/"><i style="color: #5F16EBff;" class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/company/dg-lytix/"><i style="color: #5F16EBff;" class="fa-brands fa-linkedin"></i></a>
-            
-      
-              </div>
-      
-            </div>
-      
-          </footer>
+        <footer class="footer-distributed">
+          <div class="footer-left">
+            <h3>DG Lytix</h3>
+            <p class="footer-links">
+              <a href="#pr__hero" class="link-1">Home</a>
+              <a href="#pr__services">Services</a>
+              <a href="#pr__works">Works</a>
+              <a href="#pr__about">About</a>
+              <a href="#pr__clients">Team</a>
+              <a href="#pr__blog">Articles</a>
+              <a href="#pr__contact">Contact</a>
+            </p>
+            <p class="footer-company-name " style="color: white;">DG Lytix © 2023</p>
+          </div>
 
+          <div class="footer-center">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Charkhal</span> Dillibazar, Kathmandu</p>
+            </div>
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+977 9702046179</p>
+            </div>
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p><a style="color: white;" href="mailto:support@dglytix.com">support@dglytix.com</a></p>
+            </div>
+          </div>
+
+          <div class="footer-right">
+            <p class="footer-company-about">
+              <span>DG Lytix</span>
+              Join us at DG Lytix as we continue to innovate, inspire, and reshape the tech landscape from the ground up. Together, we're not just building solutions—we're building the future.
+            </p>
+            <div class="footer-icons " >
+              <a href="https://www.instagram.com/dglytix/"><i style="color: #5F16EBff;" class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/p/DG-Lytix-100094749812431/"><i style="color: #5F16EBff;" class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/company/dg-lytix/"><i style="color: #5F16EBff;" class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
-   
- <script src="assets/js/vanilla.js"></script>
+
+    <script src="assets/js/vanilla.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/anime.min.js"></script>
     <script src="assets/js/pr.animation.js"></script>
@@ -856,5 +779,46 @@ Saroj Gautam, a skilled video editor specializes in transforming raw footage int
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/validate.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(this);
+        const data = Object.fromEntries(formData);
+        
+        // Show success message
+        const successMessage = document.getElementById('formSuccess');
+        successMessage.style.display = 'block';
+        
+        // Reset form
+        this.reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 5000);
+        
+        // Example of how you might send the data to a server:
+        /*
+        fetch('/send-message', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Message sent successfully!');
+          this.reset();
+        })
+        .catch(error => {
+          alert('Error sending message. Please try again.');
+        });
+        */
+      });
+    </script>
   </body>
 </html>
